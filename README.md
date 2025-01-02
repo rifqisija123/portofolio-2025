@@ -1,6 +1,6 @@
 # Portofolio V5
 Halo semuanya!
-Perkenalkan, saya Eki Zulfar Rachman, dan pada kesempatan kali ini, saya ingin berbagi proyek website portofolio yang telah saya kembangkan.
+Perkenalkan, saya Rifqi Ainur Rahman Tarmono, dan pada kesempatan kali ini, saya ingin berbagi proyek website portofolio yang telah saya kembangkan khusus di tahun baru 2025 ini.
 
 Tech Stack yang digunakan:
 - ReactJS
@@ -11,11 +11,6 @@ Tech Stack yang digunakan:
 - Lucide
 - Material UI
 - SweetAlert2
-
-Link Website:
-https://www.eki.my.id/
-
-We would appreciate it if you would like to use this project, please include our credit in your use. Thank You! 🙏
 
 # Tutorial Menjalankan Project
 
