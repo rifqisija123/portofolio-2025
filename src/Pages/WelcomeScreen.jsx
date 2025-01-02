@@ -151,7 +151,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 data-aos="fade-up"
                 data-aos-delay="1200"
               >
-                <a
+                {/* <a
                   href="https://www.eki.my.id"
                   className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
                   target="_blank"
@@ -164,7 +164,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                       <TypewriterEffect text="www.eki.my.id" />
                     </span>
                   </div>
-                </a>
+                </a> */}
               </motion.div>
             </div>
           </div>

@@ -19,54 +19,54 @@ import { Code, Award, Boxes } from "lucide-react";
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
   <button
-    onClick={onClick}
-    className="
-      px-3 py-1.5
-      text-slate-300 
-      hover:text-white 
-      text-sm 
-      font-medium 
-      transition-all 
-      duration-300 
-      ease-in-out
-      flex 
-      items-center 
-      gap-2
-      bg-white/5 
-      hover:bg-white/10
-      rounded-md
-      border 
-      border-white/10
-      hover:border-white/20
-      backdrop-blur-sm
-      group
-      relative
-      overflow-hidden
-    "
-  >
-    <span className="relative z-10 flex items-center gap-2">
-      {isShowingMore ? "See Less" : "See More"}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={`
-          transition-transform 
-          duration-300 
-          ${isShowingMore ? "group-hover:-translate-y-0.5" : "group-hover:translate-y-0.5"}
-        `}
-      >
-        <polyline points={isShowingMore ? "18 15 12 9 6 15" : "6 9 12 15 18 9"}></polyline>
-      </svg>
-    </span>
-    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500/50 transition-all duration-300 group-hover:w-full"></span>
-  </button>
+    onClick={onClick}></button>
+  //   className="
+  //     px-3 py-1.5
+  //     text-slate-300 
+  //     hover:text-white 
+  //     text-sm 
+  //     font-medium 
+  //     transition-all 
+  //     duration-300 
+  //     ease-in-out
+  //     flex 
+  //     items-center 
+  //     gap-2
+  //     bg-white/5 
+  //     hover:bg-white/10
+  //     rounded-md
+  //     border 
+  //     border-white/10
+  //     hover:border-white/20
+  //     backdrop-blur-sm
+  //     group
+  //     relative
+  //     overflow-hidden
+  //   "
+  // >
+  //   <span className="relative z-10 flex items-center gap-2">
+  //     {isShowingMore ? "See Less" : "See More"}
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="16"
+  //       height="16"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="2"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //       className={`
+  //         transition-transform 
+  //         duration-300 
+  //         ${isShowingMore ? "group-hover:-translate-y-0.5" : "group-hover:translate-y-0.5"}
+  //       `}
+  //     >
+  //       <polyline points={isShowingMore ? "18 15 12 9 6 15" : "6 9 12 15 18 9"}></polyline>
+  //     </svg>
+  //   </span>
+  //   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500/50 transition-all duration-300 group-hover:w-full"></span>
+  // </button>
 );
 
 function TabPanel({ children, value, index, ...other }) {
@@ -106,13 +106,25 @@ const techStacks = [
   { icon: "javascript.svg", language: "JavaScript" },
   { icon: "tailwind.svg", language: "Tailwind CSS" },
   { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
+  { icon: "php.png", language: "PHP" },
   { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
+  { icon: "pythonbg.png", language: "Python" },
   { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "docker.png", language: "Docker" },
+  { icon: "rust.png", language: "Rust" },
+  { icon: "laravel.png", language: "Laravel" },
+  { icon: "golang.png", language: "Golang" },
+  { icon: "TS.svg", language: "TypeScript" },
+  { icon: "mysql.svg", language: "MySQL" },
+  { icon: "prisma.svg", language: "Prisma" },
+  { icon: "postgre.png", language: "PostgreSQL" },
+  { icon: "swagger.svg", language: "Swagger" },
+  { icon: "postman.svg", language: "Postman" },
+  { icon: "nextjs.svg", language: "Next JS" },
+  { icon: "github.svg", language: "Github" },
+  { icon: "kotlin.svg", language: "Kotlin" },
+  { icon: "iconc++.png", language: "C++" },
+  { icon: "restapii.png", language: "RestFul API" },
 ];
 
 export default function FullWidthTabs() {
@@ -192,7 +204,7 @@ export default function FullWidthTabs() {
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
           }}>
-            Portfolio Showcase
+            Portofolio Showcase
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
@@ -202,7 +214,6 @@ export default function FullWidthTabs() {
       </div>
 
       <Box sx={{ width: "100%" }}>
-        {/* AppBar and Tabs section - unchanged */}
         <AppBar
           position="static"
           elevation={0}
@@ -297,7 +308,7 @@ export default function FullWidthTabs() {
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
-                {displayedProjects.map((project, index) => (
+                {/* {displayedProjects.map((project, index) => (
                   <div
                     key={project.id || index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
@@ -311,7 +322,7 @@ export default function FullWidthTabs() {
                       id={project.id}
                     />
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
             {projects.length > initialItems && (
@@ -327,7 +338,7 @@ export default function FullWidthTabs() {
           <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
-                {displayedCertificates.map((certificate, index) => (
+                {/* {displayedCertificates.map((certificate, index) => (
                   <div
                     key={index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
@@ -335,7 +346,7 @@ export default function FullWidthTabs() {
                   >
                     <Certificate ImgSertif={certificate.Img} />
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
             {certificates.length > initialItems && (
